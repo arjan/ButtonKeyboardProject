@@ -212,7 +212,7 @@ bool CALLBACK_HID_Device_CreateHIDReport(
 	    }
 
 	    /* Send an led status byte back for every keyboard report received */
-	    Serial_TxByte(ledReport);
+	    Serial_SendByte(ledReport);
 	}
 
 	for (ind=0; ind<8; ind++) {
